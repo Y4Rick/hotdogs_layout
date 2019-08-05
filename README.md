@@ -1,4 +1,4 @@
-# hotdogs_layout
+# Hotdogs_layout
 First steps in HTML/CSS-coding.<br>
 Finally met with preprocessor - SCSS ← (Sass)<br>
 
