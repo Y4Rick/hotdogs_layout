@@ -6,4 +6,4 @@ https://github.com/Y4Rick/hotdogs_layout - Code style!
 
 #верстальщик #coder #htmlcoder #csscoder #html #html5 #css #css3 #scss #sass
 
-![alt text](https://github.com/Y4Rick/Business_theme/blob/master/business_thene.jpg)
+![alt text](https://github.com/Y4Rick/hotdogs_layout/blob/master/hotdog_layout.png)
