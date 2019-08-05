@@ -1,6 +1,6 @@
 # hotdogs_layout
 First steps in HTML/CSS-coding. HOTDOGS Page.<br>
-First meeting with preprocessor - SCSS ← (Sass)<br>
+Finally met with preprocessor - SCSS ← (Sass)<br>
 
 https://github.com/Y4Rick/hotdogs_layout - Code style!
 
