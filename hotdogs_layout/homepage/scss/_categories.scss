@@ -1,0 +1,99 @@
+.category_block {
+	position: relative;
+
+	.category_wrap {
+		display: inline-block;
+		vertical-align: top;
+		padding: 214px 0 231px 0;
+		width: 50%;
+		background-color: #fff;
+	}
+
+	&:nth-child(odd)::after {
+    	content: "";
+    	display: inline-block;
+		vertical-align: top;
+		position: absolute;
+	    width: 50%;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	}
+	
+	&:nth-child(even) {
+	
+		&::before {
+			content: "";
+			display: inline-block;
+			vertical-align: top;
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}	
+		
+		& .category_wrap {
+			margin-left: 50%;
+
+			.category {
+				margin: 0 auto 0 78px;
+			}
+		}
+	}
+
+	&:nth-child(1)::after  {
+		background-image: url('../img/hot_dog/beef_hotdogs.jpg');
+	}
+
+	&:nth-child(2)::before  {
+		background-image: url('../img/hot_dog/vegan_hotdogs.jpg');
+
+	}
+
+	&:nth-child(3)::after  {
+		background-image: url('../img/hot_dog/vegitarian_hotdogs.jpg');
+
+	}
+}
+
+.category {
+	margin: 0 147px 0 auto;
+    padding: 0 0 0 52px;
+	max-width: 473px;
+	
+	.category_title {
+		position: relative;
+		font-size: 24px;
+		line-height: 24px * 1.5;
+		font-weight: $font-bold;
+		letter-spacing: -1px;
+
+		&::before {
+			content: "";
+			display: block;
+			width: 31px;
+			height: 3px;
+			position: absolute;
+			top: 17px;
+			left: -52px;
+			background-color: $hyphen-color;
+		}
+	}
+
+	&:hover .category_title::before {
+		background-color: $hyphen-color-hover;
+	}
+	
+	.category_description {
+		margin: 23px 0 0 0;
+		font-size: 18px;
+		font-weight: $font-light;
+		line-height: 24px;
+		letter-spacing: -1px;
+	}
+}
+
+

@@ -1,0 +1,53 @@
+.intro_block {
+    box-shadow: inset 0 15px 20px -20px #000000;
+    background: $intro-background-color;
+}
+
+.intro {
+    padding: 115px 280px 173px 280px;
+    text-align: center;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 92px;
+        background-image: url("../img/hot_dog/hot_dog.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+}
+
+.intro_title {
+    margin-top: 22px;
+    font-family: $font-stack;
+    text-align: center;
+    font-size: 56px;
+    line-height: 56px * 1.5;
+    font-weight: $font-light;
+    letter-spacing: -2px;
+}
+
+.intro_btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 66px;
+    padding: 22px 33px 18px 38px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    background-color: $hame-page-button-color;
+
+    &:hover {
+        background-color: lighten($hame-page-button-color, 10%);
+        transition: 0.2s;
+    }
+
+    &:active {
+        box-shadow: inset 0 0 5px 5px $hame-page-button-color;
+    }
+}
+

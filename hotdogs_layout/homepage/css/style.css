@@ -1,0 +1,313 @@
+/* line 4, ../scss/style.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #555559;
+}
+
+/* line 11, ../scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, ../scss/style.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 1, ../scss/_psedo_grid_block.scss */
+.photos_table {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 7, ../scss/_psedo_grid_block.scss */
+.photos_table .instagram_block {
+  position: absolute;
+  top: 15px;
+  right: 22px;
+  z-index: 200;
+}
+/* line 14, ../scss/_psedo_grid_block.scss */
+.photos_table .photo_row {
+  display: table-row;
+  height: 250px;
+}
+/* line 18, ../scss/_psedo_grid_block.scss */
+.photos_table .photo_row .photo_cell {
+  display: table-cell;
+  text-align: center;
+}
+
+/* line 25, ../scss/_psedo_grid_block.scss */
+.instagram_logo, .instagram_link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 30, ../scss/_psedo_grid_block.scss */
+.instagram_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24.38px;
+  text-decoration: none;
+}
+
+/* line 39, ../scss/_psedo_grid_block.scss */
+.image_link, .image_link .image_img {
+  display: block;
+}
+/* line 42, ../scss/_psedo_grid_block.scss */
+.image_link .image_img {
+  width: 100%;
+  height: 250px;
+}
+
+/* line 23, ../scss/style.scss */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* line 2, ../scss/_header.scss */
+.header::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  z-index: 100;
+  box-shadow: inset 0 100px 74px -60px #000000;
+}
+
+/* line 13, ../scss/_header.scss */
+.nav {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/* line 21, ../scss/_header.scss */
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+/* line 27, ../scss/_header.scss */
+.menu .menu_item {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 31, ../scss/_header.scss */
+.menu .menu_item .menu_link {
+  display: block;
+  padding: 38px;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+/* line 37, ../scss/_header.scss */
+.menu .menu_item .menu_link:hover {
+  background: #e1e1e1;
+  transition: 0.2s;
+}
+/* line 42, ../scss/_header.scss */
+.menu .menu_item .menu_link:active {
+  box-shadow: inset 0 0 15px 5px #2e2e2e;
+}
+
+/* line 1, ../scss/_intro.scss */
+.intro_block {
+  box-shadow: inset 0 15px 20px -20px #000000;
+  background: #fbfafa;
+}
+
+/* line 6, ../scss/_intro.scss */
+.intro {
+  padding: 115px 280px 173px 280px;
+  text-align: center;
+}
+/* line 10, ../scss/_intro.scss */
+.intro::before {
+  content: "";
+  display: block;
+  height: 92px;
+  background-image: url("../img/hot_dog/hot_dog.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+/* line 21, ../scss/_intro.scss */
+.intro_title {
+  margin-top: 22px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 56px;
+  line-height: 84px;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+
+/* line 31, ../scss/_intro.scss */
+.intro_btn {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 66px;
+  padding: 22px 33px 18px 38px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  text-decoration: none;
+  background-color: #286782;
+}
+/* line 44, ../scss/_intro.scss */
+.intro_btn:hover {
+  background-color: #3486a9;
+  transition: 0.2s;
+}
+/* line 49, ../scss/_intro.scss */
+.intro_btn:active {
+  box-shadow: inset 0 0 5px 5px #286782;
+}
+
+/* line 1, ../scss/_categories.scss */
+.category_block {
+  position: relative;
+}
+/* line 4, ../scss/_categories.scss */
+.category_block .category_wrap {
+  display: inline-block;
+  vertical-align: top;
+  padding: 214px 0 231px 0;
+  width: 50%;
+  background-color: #fff;
+}
+/* line 12, ../scss/_categories.scss */
+.category_block:nth-child(odd)::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 26, ../scss/_categories.scss */
+.category_block:nth-child(even)::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 38, ../scss/_categories.scss */
+.category_block:nth-child(even) .category_wrap {
+  margin-left: 50%;
+}
+/* line 41, ../scss/_categories.scss */
+.category_block:nth-child(even) .category_wrap .category {
+  margin: 0 auto 0 78px;
+}
+/* line 47, ../scss/_categories.scss */
+.category_block:nth-child(1)::after {
+  background-image: url("../img/hot_dog/beef_hotdogs.jpg");
+}
+/* line 51, ../scss/_categories.scss */
+.category_block:nth-child(2)::before {
+  background-image: url("../img/hot_dog/vegan_hotdogs.jpg");
+}
+/* line 56, ../scss/_categories.scss */
+.category_block:nth-child(3)::after {
+  background-image: url("../img/hot_dog/vegitarian_hotdogs.jpg");
+}
+
+/* line 62, ../scss/_categories.scss */
+.category {
+  margin: 0 147px 0 auto;
+  padding: 0 0 0 52px;
+  max-width: 473px;
+}
+/* line 67, ../scss/_categories.scss */
+.category .category_title {
+  position: relative;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+/* line 74, ../scss/_categories.scss */
+.category .category_title::before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 3px;
+  position: absolute;
+  top: 17px;
+  left: -52px;
+  background-color: #84959c;
+}
+/* line 86, ../scss/_categories.scss */
+.category:hover .category_title::before {
+  background-color: #286782;
+}
+/* line 90, ../scss/_categories.scss */
+.category .category_description {
+  margin: 23px 0 0 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+/* line 1, ../scss/_footer.scss */
+.footer {
+  background: #efefef;
+  border: 2px solid #e9e9e9;
+}
+
+/* line 6, ../scss/_footer.scss */
+.footer_block {
+  padding: 25px 20px 25px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* line 12, ../scss/_footer.scss */
+.footer_block .copyright {
+  float: left;
+}
+/* line 16, ../scss/_footer.scss */
+.footer_block .address_wrap {
+  float: right;
+}
+
+/* line 21, ../scss/_footer.scss */
+.address {
+  display: inline-block;
+  vertical-align: top;
+  font-style: normal;
+}
+
+/* line 27, ../scss/_footer.scss */
+.footer_contact_us {
+  color: #555559;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

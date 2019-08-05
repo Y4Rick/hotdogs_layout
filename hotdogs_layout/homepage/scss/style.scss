@@ -1,0 +1,32 @@
+@import "colors";
+@import "fonts";
+
+body {
+	font-family: $font-stack;
+	font-weight: $font-regular;
+    font-style: normal;
+    color: $primary-color;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@import "psedo_grid_block";
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+@import "header";
+@import "intro";
+@import "categories";
+@import "footer";
+

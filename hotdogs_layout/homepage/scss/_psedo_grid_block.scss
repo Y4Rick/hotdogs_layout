@@ -1,0 +1,47 @@
+.photos_table {
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+
+	.instagram_block {
+		position: absolute;
+		top: 15px;
+		right: 22px;
+		z-index: 200;
+	}
+	
+	.photo_row {
+		display: table-row;
+		height: 250px;
+
+    	.photo_cell {
+		    display: table-cell;
+			text-align: center;
+		}
+	}
+}
+
+.instagram_logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.instagram_link {
+	@extend .instagram_logo;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: $font-bold;
+	line-height: 24.38px;
+	text-decoration: none;
+}
+
+.image_link {
+	display: block;
+
+	.image_img {
+		@extend .image_link;
+		width: 100%;
+		height: 250px;
+	}
+}
